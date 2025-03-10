@@ -4,6 +4,13 @@
 
 I will demonstrate how to carry out in depth phishing analysis. I will be identifying malicious techniques using the MITRE ATT&amp;CK framework, using Atomic Red Team tests to conduct attack simulations and creating alerting and detection rules from the attack tests
 
+<h2>Languages and Utilities Used</h2>
+
+- MITRE ATT&CK framework
+- Cyber Kill Chain
+- AtomicTest
+- Powershell
+- Windows Event Viewer
 
 All cyber attacks follow a fairly standard process, which is explained quite well by the Unified Cyber Kill chain.
 
@@ -16,13 +23,13 @@ MITRE ATT&CK framework is a collection of tactics, techniques, and procedures th
 
 <h2>Scenario</h2>
 
-In this scenario it is suspected that the supposed attacker used the MITRE ATT&CK technique T1566.001: Spearphishing with an attachment. Let's recreate the attack emulation performed by the supposed attacker and then look for the artefacts created.
+In this scenario it is suspected that the supposed attacker used the **MITRE ATT&CK technique T1566.001: Spearphishing with an attachment. **Let's recreate the attack emulation performed by the supposed attacker and then look for the artefacts created.
 
 <h2>Task with in-depth breakdown</h2>
 
-AtomicTest can be used to recreate the attack emulation performed by the supposed attacker and then look for the artefacts created.
+**AtomicTest** can be used to recreate the attack emulation performed by the supposed attacker and then look for the artefacts created.
 
-The Invoke-AtomicTest function can be used to run an atomic test on the system where Atomic Red Team (Local) is installed, or on a remote machine through a PowerShell Remoting session (Remote).
+The **Invoke-AtomicTest **function can be used to run an atomic test on the system where Atomic Red Team (Local) is installed, or on a remote machine through a **PowerShell** Remoting session (Remote).
 
 
 The command Get-Help Invoke-Atomictest will give details on the commands within the AtomicTest tool/
